@@ -10,10 +10,10 @@ import jakarta.persistence.Id;
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
-    String lastName;
-    String firstName;
-    String email;
+    private Long id;
+     public String lastName;
+    public String firstName;
+   public String email;
 
     public String getLastName() {
         return lastName;
@@ -39,8 +39,7 @@ public class Employee {
         this.email = email;
     }
 
-    public Employee(Long id, String lastName, String firstName, String email) {
-        this.id=id;
+    public Employee(String lastName, String firstName, String email) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.email = email;

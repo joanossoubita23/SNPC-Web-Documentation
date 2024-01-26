@@ -8,6 +8,8 @@ public class SnpcApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SnpcApplication.class, args);
+
+
 	}
 
 }
