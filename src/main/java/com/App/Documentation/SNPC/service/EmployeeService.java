@@ -5,10 +5,10 @@ import com.App.Documentation.SNPC.entity.Employee;
 import java.util.List;
 
 public interface EmployeeService {
-    List<Employee> getemployee();
+    List<Employee> getEmployee();
     Employee getEmployeeById(Long id);
     Employee AddEmployee(Employee employee);
     void deleteEmployeeById(Long id);
-    Employee addEmployee(Long id, Employee employee);
+    Employee updateEmployeeById(Long id, Employee employee);
 
 }

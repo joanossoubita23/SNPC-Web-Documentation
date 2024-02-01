@@ -18,7 +18,7 @@ public class EmployeeImplementation implements EmployeeService{
     }
 
     @Override
-    public List<Employee> getemployee() {
+    public List<Employee> getEmployee() {
         return employeeRepository.findAll();
     }
 
@@ -45,7 +45,7 @@ public class EmployeeImplementation implements EmployeeService{
     }
 
     @Override
-    public Employee addEmployee(Long id, Employee employee) {
+    public Employee updateEmployeeById(Long id, Employee employee) {
         Employee existingEmployee=getEmployeeById(id);
         existingEmployee.setFirstName(existingEmployee.getFirstName());
         existingEmployee.setLastName(existingEmployee.getLastName());
